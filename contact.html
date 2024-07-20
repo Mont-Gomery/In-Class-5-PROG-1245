@@ -1,0 +1,102 @@
+<!--Kyle-Jack Essien kessien3634@conestogac.on.ca-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>First HTML Document.</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+<body>
+   <header class="structural">
+      <h1>In Class Tasks</h1>  
+   </header>
+   
+   <nav class="structural">
+ <ul>
+   <li><a href="Index.html">Home</a></li>
+   <li><a href="gallery.html">gallery</a></li>
+   <li><a href="contact.html">Contact</a></li>
+ </ul>
+   </nav>
+   <div class="content-wrapper">
+ <main>
+    <h2>Contact</h2>
+    <form>
+        <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required autofocus>  
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <fieldset>
+            <legend>What Section of PROG1245 are you in?</legend>
+              <div>
+                <input type="radio" id="section4" name="sec" value="4" required>
+                <label for="section4">Section 4</label><br>
+              </div>
+
+              <div>
+                <input type="radio" id="section5" name="sec" value="5" required>
+                <label for="section5">Section 5</label><br>
+              </div>
+
+              <div>
+                <input type="radio" id="section8" name="sec" value="8" required>
+                <label for="section8">Section 8</label>
+              </div>  
+
+        </fieldset>
+
+        <div>
+            <label for="help">What do you need help with?</label>
+            <select id="help" name="help" required>
+              <option value="" selected disabled>Select option</option>
+              <option value="html">HTML</option>
+              <option value="css">CSS</option>
+              <option value="both">Both (HTML & CSS)</option>
+            </select>
+        </div>
+        <div>
+            <label for="comments">Comments</label>
+            <textarea id="comments" name="comments" rows="4" required></textarea>
+          </div>
+
+          <div>
+            <input type="checkbox" id="human" name="human" value="true" required>
+            <label for="human">I am a human</label>
+          </div>
+
+          <div>
+            <input type="submit" value="Submit">
+          </div>
+
+    </form>
+ </main>
+  
+
+   <aside>
+    <h2>CSS Resources</h2>
+    <ul>
+      <li><a href="#">CSS Tutorial</a></li>
+      <li><a href="#">CSS Syntax</a></li>
+    </ul>
+      
+   </aside>
+   </div>
+
+   <footer>
+      <p>&copy; --Kyle-Jack Essien</p> 
+   </footer>
+
+
+  
+
+</body>
+</html>

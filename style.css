@@ -1,0 +1,208 @@
+/*Kyle-Jack Essien*/
+/* 8963634 */
+body{
+    background-color: hsla(40, 100%, 92%, 0.8) ;
+
+    width: 80%; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 20px; 
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+.structural{
+ padding: 10px;
+ margin: 1rem;
+
+}
+h1{
+    color: blue;
+    font-size: 2.5rem;
+ }
+
+h2{
+    color: rgb(249, 249, 91);
+    font-size: 2em;
+}
+
+header{
+background-color: hsl(115, 30%, 46%);
+
+}
+
+.content-wrapper {
+    display: flex;
+  }
+
+
+main{
+    background-color: hsl(295, 16%, 52%);
+    flex: 2 1 70%;
+     
+
+    }
+nav {
+    background-color: rgb(144, 125, 198);
+
+}
+    nav ul {
+        list-style: none;
+    }
+    nav li{
+        display: inline;
+    }
+    nav a {
+        border: 2px solid indigo;
+        color: indigo;
+        background-color: cornsilk;
+        text-decoration: none;
+        padding: 1em;
+        font-weight: bold;
+       
+    }
+
+    nav a:hover {
+        border-color: cornsilk;
+        color: cornsilk;
+        background-color: indigo;
+    }
+
+    section {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: stretch;
+      }
+
+
+
+    aside ul{
+        list-style: none;
+        list-style-type: disc;
+    }
+    aside ul a:hover {
+        color: red;
+    }
+ul{
+    list-style: georgian;
+  }
+
+    li{
+        line-height:  2em;
+     }
+
+  li a{
+     color: rgba(0, 0, 0, 0.8);
+      }
+
+aside{
+    background-color: hsl(70, 45%, 78%);
+    flex: 1 1 30%;
+    margin-left: 2%;
+
+ 
+     }
+
+     main, aside {
+        height: auto; /* Remove fixed height */
+      }
+
+#par1{
+    color: rgb(100,45, 255);
+}
+
+#par2{
+    color: rgb(45, 123, 98);
+}
+
+#par3{
+    color: rgb(78, 123, 35);
+}
+a :hover{ 
+color: #456;
+}
+footer p{
+    font-size:small;
+}
+footer {
+    background-color: rgb(105, 215, 116);
+    padding: 15px;
+    margin-top: 12px;
+}
+
+form {
+    border: 5px dashed #4b0a69; /* Changing color as needed */
+    padding: 5%;
+    margin-bottom: 25%;
+    margin-right: 5%;
+  }
+
+
+  input[type="text"],
+input[type="email"],
+input[type="submit"],
+select,
+option,
+textarea {
+  width: 50%;
+  display: block;
+  height: 2em;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  height: 2em;
+  width: 2em;
+}
+
+label,
+legend,
+input[type="submit"] 
+{
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-variant: small-caps;
+}
+
+textarea {
+    width: 50%;
+    display: block;
+  }
+  
+  fieldset {
+    border: none;
+  }
+/*Gallery Section*/
+html {
+    font: 20px Arial, sans-serif;
+}
+#gallery{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+figure {
+    border: 1px solid #000;
+  }
+
+  figure img {
+    width: 100%;
+    height: 80%;
+  }
+
+  @media (max-width: 600px)
+  {
+    html {
+        font-size: 10px;
+    }
+
+    #gallery{
+             grid-template-columns: 1fr;
+    }
+    body {
+       flex-direction: column;
+    }
+  }
